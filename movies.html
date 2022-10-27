@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ranks</title>
+</head>
+<body>
+    <h1>Movie Ratings</h1>
+    <form id="movieInfo">
+        <input type="text" id="title" placeholder="Movie Title">
+        <input type="text" id="rating" placeholder="Rating">
+        <input type="submit" id="submit">
+    </form>
+    <h2>Rates</h2>
+    <ol id="rankList">
+        
+    </ol>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $('#submit').click(function(){
+            const movie = $('#title').val();
+            const rate = $('#rate').val();
+            $('#rankList').append(movie, rate)
+        })
+    </script>
+</body>
+</html>
